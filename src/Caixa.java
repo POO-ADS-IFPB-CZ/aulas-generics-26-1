@@ -1,12 +1,12 @@
-public class Caixa {
+public class Caixa<T> {
 
-    private Object objeto;
+    private T objeto;
 
-    public Object getObjeto(){
+    public T getObjeto(){
         return objeto;
     }
 
-    public void setObjeto(Object objeto){
+    public void setObjeto(T objeto){
         this.objeto = objeto;
     }
 
