@@ -1,7 +1,11 @@
 void main() {
 
-    Caixa<String> caixaString = new Caixa<>();
     Caixa<Integer> caixaInteiro = new Caixa<>();
+    Caixa<String> caixaString = new Caixa<>();
+    Caixa<? extends Integer> caixaNumero = new Caixa<>();
+
+    caixaNumero = caixaInteiro;
+    caixaNumero = caixaString;
 
 }
 
