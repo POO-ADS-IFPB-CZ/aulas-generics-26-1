@@ -1,11 +1,16 @@
 void main() {
 
-    Caixa<Integer> caixaInteiro = new Caixa<>();
-    Caixa<String> caixaString = new Caixa<>();
-    Caixa<? extends Integer> caixaNumero = new Caixa<>();
-
-    caixaNumero = caixaInteiro;
-    caixaNumero = caixaString;
+    Lista<Integer> minhaLista = new Lista<>();
+    minhaLista.adicionar(1);
+    minhaLista.adicionar(4);
+    minhaLista.adicionar(6);
+    minhaLista.adicionar(1);
+    minhaLista.adicionar(4);
+    minhaLista.adicionar(6);
+    minhaLista.adicionar(1);
+    minhaLista.adicionar(4);
+    minhaLista.adicionar(6);
+    minhaLista.listar();
 
 }
 
